@@ -14,7 +14,7 @@ steps:
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'sonarcloud'
-    organization: 'Tanisha02'
+    organization: '187f46af2941104298cf6d14ea1c8b5fa62344f2'
     scannerMode: 'Other'
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
