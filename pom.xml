@@ -49,3 +49,8 @@
   </properties>
 	
 </project>
+
+<properties>
+  <sonar.organization>187f46af2941104298cf6d14ea1c8b5fa62344f2</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
