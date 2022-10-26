@@ -16,6 +16,11 @@ steps:
     SonarCloud: 'sonarcloud'
     organization: '187f46af2941104298cf6d14ea1c8b5fa62344f2'
     scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=187f46af2941104298cf6d14ea1c8b5fa62344f2
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
